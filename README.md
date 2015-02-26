@@ -1,6 +1,8 @@
 Random Delay Valve
+==================
 
-:: Description
+Description
+-----------
 Tomcat valve that imposes a random delay for each request.
 
 This is useful for testing environments when you want to force ajax calls to get slightly out of sync in a non deterministic way.
@@ -8,14 +10,18 @@ This is useful for testing environments when you want to force ajax calls to get
 Example:
 <Valve className="com.viskan.tomcat.valve.RandomDelayValve" />
 
-:: Preqs
-Maven to build and test.
+Preqs
+-----------
+  * Maven to build and test.
+  * Tomcat to use.
 
-:: Thanks
+Thanks
+-----------
 The initial code was based on the code for
 https://github.com/xlson/tomcat-valves by Leonard Axelsson, https://github.com/xlson
 
-:: License
+License
+-----------
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
