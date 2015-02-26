@@ -1,4 +1,13 @@
+#Java build
+build
+target
+lib
 *.class
+
+
+#Eclipse project
+.project
+.classpath
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
