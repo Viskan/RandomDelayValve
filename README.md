@@ -5,10 +5,12 @@ Description
 -----------
 Tomcat valve that imposes a random delay for each request.
 
-This is useful for testing environments when you want to force ajax calls to get slightly out of sync in a non deterministic way.
+This is useful for testing environments when you want to force ajax calls to get slightly out of sync in a non deterministic way or to simulate a server under heavy load that does not respond to all requests in a nice and timely manner.
 
 Example:
-<Valve className="com.viskan.tomcat.valve.RandomDelayValve" />
+<code>
+ &lt;Valve className="com.viskan.tomcat.valve.RandomDelayValve" minDelay="50" maxDelay="900" /&gt;
+<code>
 
 Preqs
 -----------
